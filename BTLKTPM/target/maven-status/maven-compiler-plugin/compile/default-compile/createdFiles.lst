@@ -1,0 +1,4 @@
+module-info.class
+com\ntt\btlktpm\PrimaryController.class
+com\ntt\btlktpm\SecondaryController.class
+com\ntt\btlktpm\App.class
