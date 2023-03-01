@@ -9,7 +9,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 * {
 /*    -fx-background-color: #ffffff;*/
-    -fx-stroke: blueviolet;
+/*    -fx-stroke: blueviolet;*/
+    -fx-font-size: 20;
 }
 
 GridPane {

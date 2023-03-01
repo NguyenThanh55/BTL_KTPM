@@ -1,16 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
-<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ntt.btlktpm.SecondaryController">
-    <children>
-        <Label text="Secondary View" />
-        <Button fx:id="secondaryButton" text="Switch to Primary View" onAction="#switchToPrimary" />
-    </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-</VBox>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DANH SÁCH CHUYẾN ĐI" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+   </top>
+   <center>
+      <TableView prefHeight="558.0" prefWidth="632.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="72.00003206729889" text="Mã chuyến" />
+          <TableColumn prefWidth="79.1999740600586" text="Mã xe" />
+            <TableColumn prefWidth="139.20001220703125" text="Nơi đi" />
+            <TableColumn prefWidth="156.79998779296875" text="Nơi đến" />
+            <TableColumn prefWidth="152.79995727539062" text="Ngày khởi hành" />
+            <TableColumn prefWidth="194.39990234375" text="Thời gian khởi hành" />
+            <TableColumn prefWidth="122.4000244140625" text="Số người đi" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="137.0" prefWidth="894.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="593.2000122070312" minWidth="10.0" prefWidth="280.2000366210938" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="523.2000427246094" minWidth="10.0" prefWidth="328.1999633789063" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.199951171875" minWidth="0.0" prefWidth="285.5999755859375" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Mã xe" />
+                        <TextField />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
